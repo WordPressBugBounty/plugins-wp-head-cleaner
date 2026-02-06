@@ -3,7 +3,7 @@
  * Plugin Name: wp_head() cleaner
  * Plugin URI: https://wordpress.org/plugins/wp-head-cleaner/
  * Description: Remove unused tags from wp_head() output.
- * Version: 2.0.8
+ * Version: 2.0.9
  * Author: Jonathan Wilsson
  * Author URI: http://jwilsson.com/
  * Text Domain: wp-head-cleaner
@@ -188,7 +188,7 @@ class WP_Head_Cleaner {
             $value = false !== $index ? $this->options[ $index ] : '';
             $args = array(
                 'name' => $action,
-                'value' => (boolean) $value,
+                'value' => (bool) $value,
                 'label_for' => $action,
                 'description' => $hook['description'],
                 'option_name' => self::OPTION_NAME,
